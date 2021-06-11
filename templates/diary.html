@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>{{title}}</h1>
+         <script type="text/javascript">
+    
+        let list3 = {{str|tojson}}
+        var i
+        for(i in list3){
+            document.write(list3[i]+"<br>")
+        }
+    </script>
+    <img src="{{image_file}}" width="500" height="377" > 
+    <br>
+    <b><a href = '/edit/{{title}}'>click here to edit diary</a></b><br>
+    <b><a href = '/remove/{{title}}'>click here to remove diary</a></b><br>
+    </body>
+
+</html>
+

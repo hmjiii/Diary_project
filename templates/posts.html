@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <p><h1>{{username}}'s diary list</h1></p>
+    <p><h2>Click title to read</h2></p>
+    <a href = '/logout'>click here to log out</a></b><br>
+    <b><a href = '/write/{{username}}'>click here to write diary</a></b>
+    <script type="text/javascript">
+    
+        let list3 = {{list1|tojson}}
+        var listLength = list3.length
+        var i
+        document.write("<p><b>---------Title Below---------</p></b>")
+
+
+        for(i in list3){
+            document.write("<a href = '/open/"+list3[i]+                 "'                   >"+list3[i]+"</a><br>")
+        }
+       
+ 
+    </script>
+
+</body>
+</html>
+
